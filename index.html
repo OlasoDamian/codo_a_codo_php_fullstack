@@ -159,10 +159,10 @@
 </section>
 <!--Card horizontal-->    
 <div class="row ubication mt-3">
-  <div class="col-6 g-0">
+  <div class="col g-0">
     <img src="assets/images/honolulu.jpg" class="img-fluid" alt="honolulu">
   </div>
-  <div class="col-6 bg-black texto_ubicacion">
+  <div class="col bg-black texto_ubicacion">
     <div class="titulo text-light">Bs As - Octubre</div>
     <div class="texto text-light"><p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la 
       más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área 
@@ -198,18 +198,18 @@
       </div>
       <div class="row">
         <div class="col-md mb-3">
-          <input type="number" name="cantEntradas" id="cantEntradas" min="0" placeholder="Cantidad Entradas" class="form-control">
+          <input type="number" name="cantEntradas" id="cantEntradas" min="0" onchange="calcularPrecioFinal()" onkeyup="calcularPrecioFinal()" placeholder="Cantidad Entradas" class="form-control">
           <small>Costo entrada $1000</small>
         </div>
         <div class="col-md mb-3">
-          <select name="" id="" class="form-select">
+          <select name="porcDescuento" id="porcDescuento" class="form-select" onchange="calcularPrecioFinal()">
             <option value="10">Particular</option>
             <option value="30">Estudiante</option>
             <option value="50">Orador</option>
           </select>
         </div>
         <div class="col-md mb-3">
-          <input type="text" name="costo" id="costo" class="form-control" disabled>
+          <input type="text" name="precioFinal" id="precioFinal" class="form-control" disabled placeholder="Costo total">
         </div>
       </div>
       <div class="row m-auto">

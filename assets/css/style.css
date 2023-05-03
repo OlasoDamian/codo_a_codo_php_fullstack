@@ -14,11 +14,20 @@ a{
 header{
     background-color:#343A41;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 100vw;
+}
+.carousel{
+    width: 100vw;
+
+}
+.carousel img{
+    filter:contrast(80%) brightness(60%);
 }
 .carousel_descripcion{
     text-shadow:1px 1px 2px black;
     text-align: right;
-    width: 30%;
+    width: 35%;
+
 }
 #oradores{
     display: flex;
@@ -119,7 +128,7 @@ header{
     margin: 0;
     padding: 0;
     background: #000;;
-    width: 100%;
+    width: 100vw;
     height: auto;
     border: 1px solid rgb(184, 184, 184);
 }
@@ -138,6 +147,7 @@ header{
     color: rgb(90,90,90);
 }
 .footer{
+    width: 100vw;
     background-color: rgb(28,63,82);
     height:100px;
 
